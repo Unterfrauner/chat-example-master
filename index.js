@@ -4,7 +4,7 @@ const io = require('socket.io')(http);
 const port = process.env.PORT || 3000; //der port gibt an wie man den server erreicht
 const verbunden = "verbunden";
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/frontend/index.html');
+    res.sendFile('https://15-puzzle-spiel.netlify.app/'); //??????geht das so??
 });
 
 io.on('connection', (socket) => { //sobald man mit server verbunden ist
